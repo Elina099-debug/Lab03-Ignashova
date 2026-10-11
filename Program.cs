@@ -147,3 +147,26 @@ bool isEven = number % 2 == 0;
 Console.WriteLine($"Число {number} чётное: {isEven}");
 
 
+Console.WriteLine();
+Console.WriteLine("Задание 2. Инкремент в выражении");
+
+// Место 1: присваивание
+int a = 0;
+int idPost = a++; // постфикс: сначала берётся старое значение 0, потом a становится 1
+int b = 0;
+int idPre = ++b;  // префикс: сначала b становится 1, потом берётся значение 1
+Console.WriteLine($"Место 1: {idPost} и {idPre}");
+
+// Место 2: арифметика
+int x = 5;
+int sumPost = 1000 + x++; // 1000 + 5 = 1005, x станет 6 только после
+int y = 5;
+int sumPre = 1000 + ++y;  // y сразу 6, поэтому 1000 + 6 = 1006
+Console.WriteLine($"Место 2: {sumPost} и {sumPre}");
+
+// Место 3: условие
+int p = 2;
+bool okPost = p++ < 3; // сравнивается старое 2 < 3, True
+int q = 2;
+bool okPre = ++q < 3;  // сначала q = 3, потом 3 < 3, False
+Console.WriteLine($"Место 3: {okPost} и {okPre}");
