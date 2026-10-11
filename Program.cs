@@ -136,37 +136,64 @@
 // Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
 // Console.WriteLine($"Итоговый балл: {totalScore}");
 
-//Задание 1. Чётное или нечётное—без if ★
+// //Задание 1. Чётное или нечётное—без if ★
+// Console.WriteLine();
+// Console.WriteLine("Задание 1. Чётное или нечётное");
+
+// Console.Write("Введите целое число: ");
+// int number = int.Parse(Console.ReadLine());
+
+// bool isEven = number % 2 == 0;
+// Console.WriteLine($"Число {number} чётное: {isEven}");
+
+
+// Console.WriteLine();
+// Console.WriteLine("Задание 2. Инкремент в выражении");
+
+// // Место 1: присваивание
+// int a = 0;
+// int idPost = a++; // постфикс: сначала берётся старое значение 0, потом a становится 1
+// int b = 0;
+// int idPre = ++b;  // префикс: сначала b становится 1, потом берётся значение 1
+// Console.WriteLine($"Место 1: {idPost} и {idPre}");
+
+// // Место 2: арифметика
+// int x = 5;
+// int sumPost = 1000 + x++; // 1000 + 5 = 1005, x станет 6 только после
+// int y = 5;
+// int sumPre = 1000 + ++y;  // y сразу 6, поэтому 1000 + 6 = 1006
+// Console.WriteLine($"Место 2: {sumPost} и {sumPre}");
+
+// // Место 3: условие
+// int p = 2;
+// bool okPost = p++ < 3; // сравнивается старое 2 < 3, True
+// int q = 2;
+// bool okPre = ++q < 3;  // сначала q = 3, потом 3 < 3, False
+// Console.WriteLine($"Место 3: {okPost} и {okPre}");
+
+
+//задание 3
 Console.WriteLine();
-Console.WriteLine("Задание 1. Чётное или нечётное");
+Console.WriteLine("Задание 3. Калькулятор скидки");
 
-Console.Write("Введите целое число: ");
-int number = int.Parse(Console.ReadLine());
+Console.Write("Введите сумму покупки: ");
+double purchaseSum = double.Parse(Console.ReadLine());
 
-bool isEven = number % 2 == 0;
-Console.WriteLine($"Число {number} чётное: {isEven}");
+Console.Write("Есть карта постоянного клиента? (1 - да, 0 - нет): ");
+int cardInput = int.Parse(Console.ReadLine());
+bool hasCard = (cardInput == 1);
 
+Console.Write("Введите количество товаров в чеке: ");
+int itemsCount = int.Parse(Console.ReadLine());
+
+bool enoughSum = purchaseSum >= 3000;
+bool enoughItems = itemsCount >= 3;
+bool bigPurchase = enoughSum && enoughItems;
+bool eligibleForDiscount = bigPurchase || hasCard;
 
 Console.WriteLine();
-Console.WriteLine("Задание 2. Инкремент в выражении");
-
-// Место 1: присваивание
-int a = 0;
-int idPost = a++; // постфикс: сначала берётся старое значение 0, потом a становится 1
-int b = 0;
-int idPre = ++b;  // префикс: сначала b становится 1, потом берётся значение 1
-Console.WriteLine($"Место 1: {idPost} и {idPre}");
-
-// Место 2: арифметика
-int x = 5;
-int sumPost = 1000 + x++; // 1000 + 5 = 1005, x станет 6 только после
-int y = 5;
-int sumPre = 1000 + ++y;  // y сразу 6, поэтому 1000 + 6 = 1006
-Console.WriteLine($"Место 2: {sumPost} и {sumPre}");
-
-// Место 3: условие
-int p = 2;
-bool okPost = p++ < 3; // сравнивается старое 2 < 3, True
-int q = 2;
-bool okPre = ++q < 3;  // сначала q = 3, потом 3 < 3, False
-Console.WriteLine($"Место 3: {okPost} и {okPre}");
+Console.WriteLine($"Сумма >= 3000: {enoughSum}");
+Console.WriteLine($"Товаров >= 3: {enoughItems}");
+Console.WriteLine($"Сумма >= 3000 И товаров >= 3: {bigPurchase}");
+Console.WriteLine($"Есть карта: {hasCard}");
+Console.WriteLine($"Скидка положена: {eligibleForDiscount}");
