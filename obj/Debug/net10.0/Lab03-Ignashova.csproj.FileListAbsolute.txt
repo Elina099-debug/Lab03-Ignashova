@@ -1,0 +1,15 @@
+C:\Users\elvix\Documents\Lab03-Ignashova\bin\Debug\net10.0\Lab03-Ignashova.exe
+C:\Users\elvix\Documents\Lab03-Ignashova\bin\Debug\net10.0\Lab03-Ignashova.deps.json
+C:\Users\elvix\Documents\Lab03-Ignashova\bin\Debug\net10.0\Lab03-Ignashova.runtimeconfig.json
+C:\Users\elvix\Documents\Lab03-Ignashova\bin\Debug\net10.0\Lab03-Ignashova.dll
+C:\Users\elvix\Documents\Lab03-Ignashova\bin\Debug\net10.0\Lab03-Ignashova.pdb
+C:\Users\elvix\Documents\Lab03-Ignashova\obj\Debug\net10.0\Lab03-Ignashova.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elvix\Documents\Lab03-Ignashova\obj\Debug\net10.0\Lab03-Ignashova.AssemblyInfoInputs.cache
+C:\Users\elvix\Documents\Lab03-Ignashova\obj\Debug\net10.0\Lab03-Ignashova.AssemblyInfo.cs
+C:\Users\elvix\Documents\Lab03-Ignashova\obj\Debug\net10.0\Lab03-Ignashova.csproj.CoreCompileInputs.cache
+C:\Users\elvix\Documents\Lab03-Ignashova\obj\Debug\net10.0\Lab03-Ignashova.sourcelink.json
+C:\Users\elvix\Documents\Lab03-Ignashova\obj\Debug\net10.0\Lab03-Ignashova.dll
+C:\Users\elvix\Documents\Lab03-Ignashova\obj\Debug\net10.0\refint\Lab03-Ignashova.dll
+C:\Users\elvix\Documents\Lab03-Ignashova\obj\Debug\net10.0\Lab03-Ignashova.pdb
+C:\Users\elvix\Documents\Lab03-Ignashova\obj\Debug\net10.0\Lab03-Ignashova.genruntimeconfig.cache
+C:\Users\elvix\Documents\Lab03-Ignashova\obj\Debug\net10.0\ref\Lab03-Ignashova.dll
